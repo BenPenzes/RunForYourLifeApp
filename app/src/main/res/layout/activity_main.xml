@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/broken_white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/MainTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center_horizontal|center_vertical"
+        android:shadowRadius="100"
+        android:text="Run For Your Life"
+        android:textColor="@color/dark_red"
+        android:textSize="50sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TableRow
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/exerciseBtn"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/dark_red"
+                android:text="Exercise"
+                android:textSize="20sp"
+                app:cornerRadius="75dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="30dp"
+            android:layout_height="84dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/recordsBtn"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/dark_red"
+                android:text="Records"
+                android:textSize="20sp"
+                app:cornerRadius="75dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="30dp"
+            android:layout_height="64dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/exitBtn"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/dark_red"
+                android:text="Exit"
+                android:textSize="20sp"
+                app:cornerRadius="75dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

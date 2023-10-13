@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/broken_white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".ExerciseLaunchActivity">
+
+    <TextView
+        android:id="@+id/exerciseLauncherTitleTv"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal|top"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Start a new Run!"
+        android:textColor="@color/dark_red"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/runBtn"
+            android:layout_width="115dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|center"
+            android:backgroundTint="@color/dark_red"
+            android:elegantTextHeight="false"
+            android:text="Run"
+            android:textSize="24sp"
+            app:cornerRadius="75dp" />
+    </LinearLayout>
+
+</LinearLayout>

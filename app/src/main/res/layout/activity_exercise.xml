@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/broken_white"
+    android:orientation="vertical"
+    tools:context=".ExerciseActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center_vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/timerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="00 : 00 : 00"
+                android:textColor="@color/dark_red"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/kilometersTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="0 KMs"
+                android:textColor="@color/dark_red"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/paceTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="0'00&quot;"
+                android:textColor="@color/dark_red"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/stepCounterTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0 Steps"
+                android:textColor="@color/dark_red"
+                android:textSize="40sp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="115dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/dark_red"
+        android:text="STOP"
+        android:textColor="@color/broken_white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="75dp" />
+
+</LinearLayout>
